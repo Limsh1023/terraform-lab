@@ -35,15 +35,13 @@ terraform {
 
 resource "random_pet" "lab" {
 
-  length = 2
-
+  length = 3
+  separator = "-"
 }
-
 
 
 output "pet_name" {
 
   value = random_pet.lab.id
-
 }
 
